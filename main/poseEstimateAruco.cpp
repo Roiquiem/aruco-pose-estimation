@@ -48,7 +48,7 @@ struct MarkerParameters {
 };
 
 // creating path for cameraDatabase
-const std::string jsonFilePath = "/home/pascal/cmain/cameraCalibration/camerasDatabase.json";
+const std::string jsonFilePath = "main/cameraCalibration/camerasDatabase.json";
 
 // function for getting the camera parameters from the external cameraDatabase file
 void initializeCameraParameters(const std::string& cameraName, MarkerParameters& markerParams) {
