@@ -18,6 +18,7 @@ const int markerLeftBottom = 43;
 const int markerCenterOuter = 93;
 const int markerCenterInner = 76;
 
+// Change based on the real size of the marker
 const float markerLengthOuter = 0.1895;
 const float markerLengthInner = 0.0210;
 const float markerLengthCorner = 0.0150;
@@ -28,15 +29,6 @@ const float yDistanceCenterCornerToCenter = 0.06354;
 const bool drawCornerAxes = true;
 const bool drawCenterInnerAxes = false;
 const bool drawCenterOuterAxes = false;
-
-// defining Kalman variables
-cv::KalmanFilter KF;
-int nstates = 18;
-int nMeasurements = 6;
-int nInputs = 0;
-double dt = 0.125;
-
-
 
 // creating cameraMatrix, distCoefficients, rvecs, tvecs, objPoints
 struct MarkerParameters {
